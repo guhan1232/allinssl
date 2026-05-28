@@ -1,0 +1,152 @@
+:root {
+	--n-sider-width: 22rem;
+	--n-sider-login-height: var(--n-header-height);
+	--n-header-height: 5rem;
+	--n-footer-height: 4rem;
+	--n-main-diff-height: calc(var(--n-header-height));
+	--n-content-margin: 1.2rem;
+	--n-content-padding: 1.2rem;
+	--n-dialog-title-padding: 0;
+	--n-layout-content-background-color: #f1f5f9;
+
+	/* 主色调 - 蓝紫渐变 */
+	--primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+	--primary-color: #6366f1;
+	--primary-color-hover: #818cf8;
+	--primary-color-light: rgba(99, 102, 241, 0.1);
+
+	/* 自定义文本颜色 */
+	--n-text-color4: #1e293b;
+	--n-text-color5: #64748b;
+
+	--n-error-bg-color-light: rgba(239, 68, 68, 0.08);
+	--n-error-primary-color: #ef4444;
+	--n-error-text-color: #ef4444;
+	--n-error-border-color: #f87171;
+	--n-success-bg-color-light: rgba(16, 185, 129, 0.08);
+	--n-success-status-color: #10b981;
+	--n-success-primary-color: #10b981;
+	--n-success-text-color: #059669;
+	--n-success-border-color: #34d399;
+	--n-warning-bg-color-light: rgba(245, 158, 11, 0.08);
+	--n-warning-primary-color: #f59e0b;
+
+	/* Home View Custom Colors */
+	--color-workflow-bg: rgba(99, 102, 241, 0.08);
+	--color-workflow-icon-wrapper-bg: rgba(99, 102, 241, 0.15);
+
+	--color-cert-bg: rgba(245, 158, 11, 0.08);
+	--color-cert-icon-wrapper-bg: rgba(245, 158, 11, 0.15);
+
+	--color-monitor-bg: rgba(139, 92, 246, 0.08);
+	--color-monitor-icon-wrapper-bg: rgba(139, 92, 246, 0.15);
+	--color-monitor-text: #8b5cf6;
+
+	--color-decorative-element-bg: #f0f4ff;
+
+	--content-bg-base: #ffffff;
+	--content-bg-secondary: #ffffff;
+
+	--border-color-transparent: #e2e8f0;
+	--form-more-color: #6366f1;
+	--form-log-bg: #f8fafc;
+	--form-log-code-bg: #e2e8f0;
+	--form-divider-title-weight: 500;
+	--monitor-upload-progress-bar-bg: #6366f1;
+	--table-link-type: none;
+
+	--setting-input-bg: #f8fafc;
+	--setting-input-bg2: #f8fafc;
+	--setting-title-primary: #1e293b;
+	--theme-select-bg: #f8fafc;
+
+	--color-text-primary-success: #10b981;
+	--color-card-title: #1e293b;
+
+	/* 卡片样式 */
+	--card-border-radius: 16px;
+	--card-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+	--card-shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+}
+
+/* 自定义文本颜色工具类 */
+.text-color4 {
+	color: var(--n-text-color4);
+}
+
+.text-color3 {
+	color: var(--n-text-color-3);
+}
+
+.text-color5 {
+	color: var(--n-text-color5);
+}
+.setting-title {
+	color: var(--setting-title-primary);
+}
+
+/* 暗色主题 */
+:root.dark,
+:root.defaultDark {
+	--n-layout-content-background-color: #0f172a;
+	--n-header-color: #1e293b;
+	--n-color: #0f172a;
+
+	/* 主色调 - 暗色主题 */
+	--primary-gradient: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+	--primary-color: #818cf8;
+	--primary-color-hover: #a5b4fc;
+	--primary-color-light: rgba(129, 140, 248, 0.15);
+
+	/* 自定义文本颜色 - 暗色主题 */
+	--n-success-bg-color-light: transparent;
+	--n-success-primary-color: #34d399;
+	--n-text-color4: #f1f5f9;
+	--n-text-color5: #94a3b8;
+
+	/* 菜单激活项渐变颜色 */
+	--menu-active-gradient-start: #6366f1;
+	--menu-active-gradient-end: #8b5cf6;
+	--menu-active-gradient: linear-gradient(135deg, var(--menu-active-gradient-start) 0%, var(--menu-active-gradient-end) 100%);
+
+	/* Home View Custom Colors - Dark Theme */
+	--color-workflow-bg: rgba(129, 140, 248, 0.12);
+	--color-workflow-icon-wrapper-bg: rgba(129, 140, 248, 0.22);
+
+	--color-cert-bg: rgba(251, 191, 36, 0.12);
+	--color-cert-icon-wrapper-bg: rgba(251, 191, 36, 0.22);
+
+	--color-monitor-bg: rgba(167, 139, 250, 0.12);
+	--color-monitor-icon-wrapper-bg: rgba(167, 139, 250, 0.22);
+	--color-monitor-text: #a78bfa;
+
+	--color-decorative-element-bg: rgba(30, 41, 59, 0.7);
+
+	--border-radius-base: 8px;
+
+	--content-bg-base: #1e293b;
+
+	--bt-card-bg-color-active: #0f172a;
+	--content-bg-secondary: #0f172a;
+
+	--border-color-transparent: transparent;
+	--form-more-color: #a5b4fc;
+	--form-log-bg: #1e293b;
+	--form-log-code-bg: #0f172a;
+	--form-divider-title-weight: 600;
+	--table-link-type: underline;
+	--workflow-header-input-bg: #1e293b;
+
+	--setting-input-bg: #1e293b;
+	--setting-input-bg2: #0f172a;
+	--setting-title-primary: #f1f5f9;
+	--theme-select-bg: #1e293b;
+
+	--n-success-border-color: #34d399;
+	--color-text-primary-success: #34d399;
+	--color-card-title: #f1f5f9;
+
+	/* 卡片样式 - 暗色 */
+	--card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
+	--card-shadow-hover: 0 4px 12px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.2);
+}

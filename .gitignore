@@ -1,0 +1,9 @@
+.DS_Store
+/data/
+/logs/
+.idea
+**/.history
+**/.vscode
+*_test.go
+*.exe
+*.syso
